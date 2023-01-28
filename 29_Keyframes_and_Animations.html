@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and Animation</title>
+    <style>
+        .container{
+            background-color: green;
+        }
+        .box{
+            background-color: greenyellow;
+            width: 300px;
+            height: 300px;
+            position: relative;
+            /* animation-name: abhi1; */
+            animation-name: abhi2;
+            animation-duration:  8s;
+            animation-iteration-count: 1;
+            /* animation-iteration-count: infinite; */
+            /* animation-fill-mode: alternate; */
+            /* starts slowly then fast */
+            /* animation-timing-function: ease-in; */
+            /* starts fast then slowly */
+            /* animation-timing-function: ease-out; */
+            /* starts slowly then fast then slowly */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-delay: 3s; */
+            /* animation-direction: reverse; */
+
+
+            /* Shortcut for animation properties */
+            /* animation: Animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode;  */
+            animation: abhi1 5s ease-in 1s 2s backwards;
+
+        }
+        @keyframes abhi1{
+            from{
+                width: 200px;
+                /* height: 200px; */
+            }
+            to{
+                width: 500px;
+                /* height: 500px; */
+            }
+        }
+        @keyframes abhi2{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 250pxpx;
+                left: 0px;
+            }
+            75%{
+                top: 250px;
+                left: 250px;
+            }
+            100%{
+                top: 250px;
+                left: 0px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">This is a box.
+
+        </div>
+    </div>
+
+</body>
+
+</html>

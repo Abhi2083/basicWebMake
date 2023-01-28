@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Querries</title>
+    <style>
+        .box {
+            font-size: 34px;
+            background-color: red;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            display: none;
+        }
+
+        @media(max-width:500px) {
+            #box-1 {
+                display: block;
+                background-color: blueviolet;
+            }
+        }
+
+        @media(min-width:400px) and (max-width:600px) {
+            #box-2 {
+                display: block;
+                background-color: cyan;
+            }
+        }
+
+        @media(min-width:600px) and (max-width:800px) {
+            #box-3 {
+                display: block;
+                background-color: rgb(7, 186, 43);
+            }
+        }
+
+        @media(min-width:800px) {
+            #box-4 {
+                display: block;
+                background-color: rgb(255, 0, 200);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box-1">I loves Iphone</div>
+    <div class="box" id="box-2">I love Tab </div>
+    <div class="box" id="box-3">I love Macbook</div>
+    <div class="box" id="box-4">I love airpods</div>
+
+</body>
+
+</html>

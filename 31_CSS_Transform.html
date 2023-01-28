@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        .container {
+            background: orange;
+            border: 5px black;
+            height: 850px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .box {
+            background: navy;
+            border: 3px solid black;
+            /* border-radius: 500px; */
+            height: 300px;
+            width: 300px;
+            text-align: center;
+            box-shadow: -4px -4px red;
+            animation: abhi;
+            animation-duration: 1s;
+            animation-delay: 0.12s;
+            /* animation-iteration-count: 5; */
+            transition: all 0.5sec ease-in-out;
+        }
+        .box:hover{
+            transform: rotate(50deg);
+            transform: skew(30deg);
+            transform: scale(1.5);
+            transform: translateX(40px);
+            transform: translateY(123px);
+        }
+
+        @keyframes abhi {
+            from {
+                height: 200px;
+                width: 200px;
+            }
+
+            to {
+                height: 400px;
+                width: 400px;
+            }
+        }
+
+        .box p {
+            margin-top: 140px;
+            color: rgb(234, 255, 0);
+            font-size: 23px;
+            text-shadow: 2px 2px rgb(245, 133, 133);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <p>!!!!!! Come Check This !!!!!!</p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selector</title>
+    <style>
+        h1{
+            background-color: khaki;
+            color: black;
+                font-weight: bold;
+                text-align: center;
+        }
+
+        /* if div is contained by any li which is contained by div */
+        /* div li p{
+            color: yellow;
+            font-weight: bold;
+            background-color: black;
+        } */
+
+        /* ">" is used to focus directly on the p after div (1st child) */
+        /* div > p{
+            color: yellow;
+            font-weight: bold;
+            background-color: black;
+        } */
+
+        /* div + p is used for the last sibling of div i.e. p is used right after div */
+        /* div + p{
+            color: aquamarine;
+            background-color: blue;
+        } */
+
+
+    </style>
+</head>
+<body>
+    <h1>This tutorial is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul><li class="item"><p>This ia another paragraph inside li.</p></li></ul>
+            <p>This is a paragraph.</p>
+        </div>
+        <p>This is another paragraph.</p>
+    </div>
+    <p>This is outer most paragraph.</p>
+</body>
+</html>

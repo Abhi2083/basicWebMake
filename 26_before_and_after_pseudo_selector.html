@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap" rel="stylesheet">
+    <title>Before and After Pseudu selector</title>
+    <style>
+        body {
+            font-family: 'Gemunu Libre', sans-serif;
+            background-color: black;
+            color: rgb(255, 255, 255);
+            padding: 0px;
+            margin: 0px;
+        }
+        /* Things to remember */
+        header::before{
+            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        h1 {
+            font-size: 2rem;
+            text-decoration: underline;
+        }
+
+        .navigation {
+            font-size: 15px;
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            padding: 30px 25px;
+
+        }
+
+        header {
+            align-items: center;
+        }
+
+        section {
+            border: 2px dotted white;
+            height: 200px;
+            margin: 3px 60px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        section::before {
+            content: "This is before content.";
+        }
+
+        section::after {
+            content: "This is after content.";
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to the coding world</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nobis, corporis blanditiis sapiente id omnis
+            excepturi maiores quidem modi commodi quibusdam accusantium ab minima laudantium similique at expedita!
+            Quibusdam, porro!</p>
+    </section>
+    
+
+</body>
+
+</html>

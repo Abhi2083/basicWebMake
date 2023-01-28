@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and Text shadow </title>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap" rel="stylesheet">
+    <style>
+        .container{
+            font-family: 'Gemunu Libre', sans-serif;
+            display: flex;
+        }
+        .card{
+            padding: 20px 10px;
+            margin: 20px 10px;
+            /* border: 2px solid black; */
+            background-color: rgb(241, 166, 166);
+
+            /* box-shadow */
+
+            /* box-shadow: offset-x offset-y color; */
+            box-shadow: 10px 5px rgb(50, 32, 110);
+            /* box-shadow: offset-x offset-y blur-radius color; */
+            box-shadow: 10px 5px 12px rgb(93, 34, 34);
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+            box-shadow: 10px 5px 12px 3px rgba(201, 43, 18, 0.6);
+
+            /* used for inside box shadow */
+            box-shadow: inset 3px 4px rgb(186, 253, 4);
+
+            /* used to give two diff box shadow at same time */
+            box-shadow: 3px 5px chocolate,6px 9px blue;
+        }
+        .card h2{
+            /* text-shadow: offset-x offset-y color; */
+            text-shadow: 1px 1px rgb(255, 255, 255);
+             /* text-shadow: offset-x offset-y blur-radius color; */
+            text-shadow: 3px 2px 1px rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is Web Development Course.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo consequuntur incidunt ex deserunt tempora quaerat voluptatum in animi, cumque pariatur. Eaque eos, quisquam quis soluta, dolores doloribus voluptatibus sunt reiciendis possimus, enim accusantium consequatur alias! Quaerat cupiditate neque ratione molestiae!</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>I am also doing DSA course. </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo consequuntur incidunt ex deserunt tempora quaerat voluptatum in animi, cumque pariatur. Eaque eos, quisquam quis soluta, dolores doloribus voluptatibus sunt reiciendis possimus, enim accusantium consequatur alias! Quaerat cupiditate neque ratione molestiae!</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2> My next target is C++ course.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo consequuntur incidunt ex deserunt tempora quaerat voluptatum in animi, cumque pariatur. Eaque eos, quisquam quis soluta, dolores doloribus voluptatibus sunt reiciendis possimus, enim accusantium consequatur alias! Quaerat cupiditate neque ratione molestiae!</p>
+        </div>
+    </div>
+    
+</body>
+</html>         
